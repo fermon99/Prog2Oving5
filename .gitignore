@@ -1,0 +1,11 @@
+# Ignore build artifacts
+*.jar
+*.war
+*.ear
+
+# Logs and temp files
+*.log
+*.tmp
+
+# Launch settings
+.json
