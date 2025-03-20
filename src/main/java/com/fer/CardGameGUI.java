@@ -24,16 +24,14 @@ public class CardGameGUI extends Application {
         Button checkButton = new Button("Check Hand");
         Button sumButton = new Button("Sum Hand");
 
-        // Button actions (connect to your actual methods)
         dealButton.setOnAction(e -> dealHand());
         checkButton.setOnAction(e -> checkHand());
         sumButton.setOnAction(e -> checkHandSum());
 
-        // Layout
+        // Interface
         VBox layout = new VBox(10, handLabel, checkHandLabel, sumLabel, dealButton, checkButton, sumButton);
         layout.setStyle("-fx-padding: 20px; -fx-alignment: center;");
 
-        // Scene setup
         Scene scene = new Scene(layout, 300, 200);
         primaryStage.setScene(scene);
         primaryStage.setTitle("Card Game");

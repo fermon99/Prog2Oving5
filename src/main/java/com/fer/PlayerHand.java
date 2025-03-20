@@ -40,5 +40,5 @@ public class PlayerHand {
         handString.append(card.getAsString()).append(" ");
     }
     return handString.toString().trim();
-}
+  }
 }
